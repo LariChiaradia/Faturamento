@@ -2,6 +2,7 @@
 using Faturamento.Models;
 using Newtonsoft.Json;
 
+//Colocar caminho do arquivo na máquina atual
 var json = await File.ReadAllTextAsync(".\\dados.json");
 var extratos = JsonConvert.DeserializeObject<List<DiaFaturamento>>(json);
 
